@@ -17,7 +17,12 @@ push_up_main() {
     git push -u origin main
 }
 
+normal_push() {
+    git add .
+    git commit -m "update"
+    git push
+}
+
 # Execute 
-check_branch_remote
-push_up_main
+normal_push
 check_branch_remote
